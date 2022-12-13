@@ -43,8 +43,10 @@ struct PLTripRefreshableView<ROOTVIEW>: UIViewRepresentable where ROOTVIEW: View
     func updateUIView(_ uiView: UIScrollView, context: Context) {
         uiView.refreshControl?.attributedTitle = attributedTitle
         if isRefreshComplete {
-            isRefreshComplete.toggle()
-            uiView.refreshControl?.endRefreshing()
+            DispatchQueue.main.async {
+                isRefreshComplete.toggle()
+                uiView.refreshControl?.endRefreshing()
+            }
         }
     }
     

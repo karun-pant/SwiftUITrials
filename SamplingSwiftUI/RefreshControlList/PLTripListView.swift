@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+struct Model: Identifiable {
+    var id = UUID()
+    var title: String
+}
+
 struct PLTripMyTripListView: View {
     @ObservedObject var viewModel: PLTripListViewModel
     var modelData = DataModel(modelData: [Model(title: "Item 1"), Model(title: "Item 2"), Model(title: "Item 3")])

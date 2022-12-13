@@ -7,26 +7,16 @@
 
 import SwiftUI
 
-struct Model: Identifiable {
-    var id = UUID()
-    var title: String
-}
-
 struct ContentView: View {
-    @ObservedObject var viewModel = PLTripListViewModel(refreshTreyTitle: "Some Title")
+    let allTrials = TrialItem.allCases
+    
     var body: some View {
-        PLTripMyTripListView(viewModel: viewModel,
-                                    onRefreshControlTriggered:  {
-            DispatchQueue.main.asyncAfter(deadline: .now()+2) {
-                viewModel.refreshTrayTitle = PLTripListViewModel.refreshTrayTitle(titleText: "Some Other Title")
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                    viewModel.isRefreshComplete = true
-                })
+        NavigationStack {
+            List(allTrials, id:\.id) { trialItem in
+                NavigationLink(trialItem.rawValue) {
+                    DetailView(selectedTrialItem: trialItem)
+                }
             }
-        }, onOpenTray: {
-            print("Open tray called")
-        }, onCloseTray: {
-            print("Close tray called")
-        })
+        }
     }
 }
