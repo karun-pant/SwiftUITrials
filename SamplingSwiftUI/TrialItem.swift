@@ -7,7 +7,8 @@
 
 enum TrialItem: String, CaseIterable {
     case tripListView
-    case gestureTrials
+    case gestureTrialsUIKit
+    case gestureTrialsSwiftUI
     case apiTrials
     var id: String {
         rawValue

@@ -26,7 +26,9 @@ struct DetailView: View {
             }, onCloseTray: {
                 print("Close tray called")
             })
-        case .gestureTrials:
+        case .gestureTrialsUIKit:
+            GestureRepresentableVC()
+        case .gestureTrialsSwiftUI:
             Text("Not set yet")
         case .apiTrials:
             Text("Not set yet")

@@ -18,6 +18,8 @@
 		C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E29D274BC85500DABBE4 /* PLTripListView.swift */; };
 		C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CD2948826300FC19C3 /* DetailView.swift */; };
 		C0E7B6D02948848900FC19C3 /* TrialItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CF2948848900FC19C3 /* TrialItem.swift */; };
+		C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */; };
+		C0E7B6D729498C4E00FC19C3 /* GestureRepresentableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6D629498C4E00FC19C3 /* GestureRepresentableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		C055E29D274BC85500DABBE4 /* PLTripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripListView.swift; sourceTree = "<group>"; };
 		C0E7B6CD2948826300FC19C3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C0E7B6CF2948848900FC19C3 /* TrialItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialItem.swift; sourceTree = "<group>"; };
+		C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesUIKit.swift; sourceTree = "<group>"; };
+		C0E7B6D629498C4E00FC19C3 /* GestureRepresentableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRepresentableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				C0E7B6CF2948848900FC19C3 /* TrialItem.swift */,
 				C055E267274BA0C400DABBE4 /* ContentView.swift */,
 				C0E7B6CD2948826300FC19C3 /* DetailView.swift */,
+				C0E7B6D32949896C00FC19C3 /* Gesture */,
 				C0E7B6D2294884B500FC19C3 /* RefreshControlList */,
 				C055E269274BA0C800DABBE4 /* Assets.xcassets */,
 				C055E26B274BA0C800DABBE4 /* Preview Content */,
@@ -145,6 +150,15 @@
 				C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */,
 			);
 			path = RefreshControlList;
+			sourceTree = "<group>";
+		};
+		C0E7B6D32949896C00FC19C3 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */,
+				C0E7B6D629498C4E00FC19C3 /* GestureRepresentableVC.swift */,
+			);
+			path = Gesture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +294,8 @@
 				C055E268274BA0C400DABBE4 /* ContentView.swift in Sources */,
 				C0E7B6D02948848900FC19C3 /* TrialItem.swift in Sources */,
 				C055E266274BA0C400DABBE4 /* SamplingSwiftUIApp.swift in Sources */,
+				C0E7B6D729498C4E00FC19C3 /* GestureRepresentableVC.swift in Sources */,
+				C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */,
 				C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */,
 				C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */,
 				C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */,
