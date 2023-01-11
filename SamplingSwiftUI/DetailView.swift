@@ -32,6 +32,10 @@ struct DetailView: View {
             Text("Not set yet")
         case .apiTrials:
             Text("Not set yet")
+        case .switchRowView:
+            SwitchRowView { isToggled in
+                print("\(isToggled ? "Toggle on" : "Toggle off")")
+            }
         }
     }
 }

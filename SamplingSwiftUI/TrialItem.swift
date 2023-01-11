@@ -10,6 +10,7 @@ enum TrialItem: String, CaseIterable {
     case gestureTrialsUIKit
     case gestureTrialsSwiftUI
     case apiTrials
+    case switchRowView
     var id: String {
         rawValue
     }

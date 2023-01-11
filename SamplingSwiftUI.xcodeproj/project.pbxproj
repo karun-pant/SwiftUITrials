@@ -16,6 +16,7 @@
 		C055E283274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E282274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift */; };
 		C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */; };
 		C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E29D274BC85500DABBE4 /* PLTripListView.swift */; };
+		C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094A1F2296F271200B1876B /* SwitchRowView.swift */; };
 		C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CD2948826300FC19C3 /* DetailView.swift */; };
 		C0E7B6D02948848900FC19C3 /* TrialItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CF2948848900FC19C3 /* TrialItem.swift */; };
 		C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */; };
@@ -52,6 +53,7 @@
 		C055E282274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplingSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripRefreshableView.swift; sourceTree = "<group>"; };
 		C055E29D274BC85500DABBE4 /* PLTripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripListView.swift; sourceTree = "<group>"; };
+		C094A1F2296F271200B1876B /* SwitchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchRowView.swift; sourceTree = "<group>"; };
 		C0E7B6CD2948826300FC19C3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C0E7B6CF2948848900FC19C3 /* TrialItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialItem.swift; sourceTree = "<group>"; };
 		C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesUIKit.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				C0E7B6CF2948848900FC19C3 /* TrialItem.swift */,
 				C055E267274BA0C400DABBE4 /* ContentView.swift */,
 				C0E7B6CD2948826300FC19C3 /* DetailView.swift */,
+				C094A1F2296F271200B1876B /* SwitchRowView.swift */,
 				C0E7B6D32949896C00FC19C3 /* Gesture */,
 				C0E7B6D2294884B500FC19C3 /* RefreshControlList */,
 				C055E269274BA0C800DABBE4 /* Assets.xcassets */,
@@ -299,6 +302,7 @@
 				C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */,
 				C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */,
 				C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */,
+				C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
