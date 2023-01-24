@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AllSamplesView: View {
     let allTrials = TrialItem.allCases
     
     var body: some View {
         NavigationStack {
             List(allTrials, id:\.id) { trialItem in
                 NavigationLink(trialItem.rawValue) {
-                    DetailView(selectedTrialItem: trialItem)
+                    DetailView(selectedTrialItem: trialItem, text: "")
                 }
             }
         }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C055E266274BA0C400DABBE4 /* SamplingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E265274BA0C400DABBE4 /* SamplingSwiftUIApp.swift */; };
-		C055E268274BA0C400DABBE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E267274BA0C400DABBE4 /* ContentView.swift */; };
+		C055E268274BA0C400DABBE4 /* AllSamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E267274BA0C400DABBE4 /* AllSamplesView.swift */; };
 		C055E26A274BA0C800DABBE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C055E269274BA0C800DABBE4 /* Assets.xcassets */; };
 		C055E26D274BA0C800DABBE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C055E26C274BA0C800DABBE4 /* Preview Assets.xcassets */; };
 		C055E277274BA0C800DABBE4 /* SamplingSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E276274BA0C800DABBE4 /* SamplingSwiftUITests.swift */; };
@@ -17,6 +17,7 @@
 		C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */; };
 		C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E29D274BC85500DABBE4 /* PLTripListView.swift */; };
 		C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094A1F2296F271200B1876B /* SwitchRowView.swift */; };
+		C0A66B0629800B7900C9A497 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A66B0529800B7900C9A497 /* MaterialTextField.swift */; };
 		C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CD2948826300FC19C3 /* DetailView.swift */; };
 		C0E7B6D02948848900FC19C3 /* TrialItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CF2948848900FC19C3 /* TrialItem.swift */; };
 		C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */; };
@@ -43,7 +44,7 @@
 /* Begin PBXFileReference section */
 		C055E262274BA0C400DABBE4 /* SamplingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamplingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C055E265274BA0C400DABBE4 /* SamplingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplingSwiftUIApp.swift; sourceTree = "<group>"; };
-		C055E267274BA0C400DABBE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C055E267274BA0C400DABBE4 /* AllSamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSamplesView.swift; sourceTree = "<group>"; };
 		C055E269274BA0C800DABBE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C055E26C274BA0C800DABBE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C055E272274BA0C800DABBE4 /* SamplingSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplingSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +55,7 @@
 		C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripRefreshableView.swift; sourceTree = "<group>"; };
 		C055E29D274BC85500DABBE4 /* PLTripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripListView.swift; sourceTree = "<group>"; };
 		C094A1F2296F271200B1876B /* SwitchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchRowView.swift; sourceTree = "<group>"; };
+		C0A66B0529800B7900C9A497 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		C0E7B6CD2948826300FC19C3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C0E7B6CF2948848900FC19C3 /* TrialItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialItem.swift; sourceTree = "<group>"; };
 		C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesUIKit.swift; sourceTree = "<group>"; };
@@ -110,9 +112,10 @@
 			children = (
 				C055E265274BA0C400DABBE4 /* SamplingSwiftUIApp.swift */,
 				C0E7B6CF2948848900FC19C3 /* TrialItem.swift */,
-				C055E267274BA0C400DABBE4 /* ContentView.swift */,
+				C055E267274BA0C400DABBE4 /* AllSamplesView.swift */,
 				C0E7B6CD2948826300FC19C3 /* DetailView.swift */,
 				C094A1F2296F271200B1876B /* SwitchRowView.swift */,
+				C0A66B0529800B7900C9A497 /* MaterialTextField.swift */,
 				C0E7B6D32949896C00FC19C3 /* Gesture */,
 				C0E7B6D2294884B500FC19C3 /* RefreshControlList */,
 				C055E269274BA0C800DABBE4 /* Assets.xcassets */,
@@ -294,7 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C055E268274BA0C400DABBE4 /* ContentView.swift in Sources */,
+				C0A66B0629800B7900C9A497 /* MaterialTextField.swift in Sources */,
+				C055E268274BA0C400DABBE4 /* AllSamplesView.swift in Sources */,
 				C0E7B6D02948848900FC19C3 /* TrialItem.swift in Sources */,
 				C055E266274BA0C400DABBE4 /* SamplingSwiftUIApp.swift in Sources */,
 				C0E7B6D729498C4E00FC19C3 /* GestureRepresentableVC.swift in Sources */,

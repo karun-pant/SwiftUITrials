@@ -10,6 +10,9 @@ import SwiftUI
 struct DetailView: View {
     let selectedTrialItem: TrialItem
     @ObservedObject var tripListViewModel = PLTripListViewModel(refreshTreyTitle: "Some Title")
+    
+    @State var text: String
+    
     var body: some View {
         switch selectedTrialItem {
         case .tripListView:
@@ -36,6 +39,17 @@ struct DetailView: View {
             SwitchRowView { isToggled in
                 print("\(isToggled ? "Toggle on" : "Toggle off")")
             }
+        case .meterialTextField:
+            MaterialTextField(placeHolder: "First Name", text: $text)
+                .padding()
+            
         }
+    }
+}
+
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(selectedTrialItem: .meterialTextField, text: "")
+            .padding()
     }
 }

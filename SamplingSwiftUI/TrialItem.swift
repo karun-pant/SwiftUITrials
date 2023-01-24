@@ -6,11 +6,12 @@
 //
 
 enum TrialItem: String, CaseIterable {
-    case tripListView
-    case gestureTrialsUIKit
-    case gestureTrialsSwiftUI
-    case apiTrials
-    case switchRowView
+    case tripListView = "Trial List View"
+    case gestureTrialsUIKit = "Gesture Trial UIKit"
+    case gestureTrialsSwiftUI = "Gesture Trial SwiftUI"
+    case apiTrials = "API Trials"
+    case switchRowView = "Switch Row View"
+    case meterialTextField = "Meterial Textbox"
     var id: String {
         rawValue
     }

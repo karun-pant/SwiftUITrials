@@ -11,7 +11,7 @@ import SwiftUI
 struct SamplingSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AllSamplesView()
         }
     }
 }
