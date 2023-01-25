@@ -11,10 +11,17 @@ struct MaterialTextField: View {
     
     let placeHolder: String
     @Binding var text: String
+    let optionalStateText: String? = "Optional"
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             ZStack(alignment: .leading) {
+                if let optionalStateText, text.isEmpty {
+                    Text(optionalStateText)
+                        .foregroundColor(Color(.placeholderText))
+                        .font(.system(size: 12, weight: .semibold))
+                        .offset(y: -25)
+                }
                 Text(placeHolder)
                     .foregroundColor(text.isEmpty
                                      ? Color(.placeholderText)
