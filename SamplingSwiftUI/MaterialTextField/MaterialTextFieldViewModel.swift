@@ -19,7 +19,7 @@ class MaterialTextFieldViewModel: ObservableObject {
     var onTapLeftAccessary: TextAction?
     @Published var errorMessage: String?
     @Published var leftAccessaryImage: String?
-    init(text: String? = nil,
+    init(text: String = "",
          optionalStateText: String?,
          placeHolder: String = "",
          onTap: TextAction? = nil,

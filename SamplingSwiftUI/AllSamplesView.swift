@@ -14,7 +14,7 @@ struct AllSamplesView: View {
         NavigationStack {
             List(allTrials, id:\.id) { trialItem in
                 NavigationLink(trialItem.rawValue) {
-                    DetailView(selectedTrialItem: trialItem, text: "")
+                    DetailView(selectedTrialItem: trialItem)
                 }
             }
         }

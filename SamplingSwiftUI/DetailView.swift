@@ -10,8 +10,10 @@ import SwiftUI
 struct DetailView: View {
     let selectedTrialItem: TrialItem
     @ObservedObject var tripListViewModel = PLTripListViewModel(refreshTreyTitle: "Some Title")
-    
-    @State var text: String
+    @ObservedObject var materialTextViewModel: MaterialTextFieldViewModel = MaterialTextFieldViewModel(optionalStateText: "Optional", placeHolder: "Name")
+    @ObservedObject var errorMaterialTextViewModel: MaterialTextFieldViewModel = MaterialTextFieldViewModel(optionalStateText: "Optional",
+                                                                                                            placeHolder: "Name",
+                                                                                                            errorMessage: "Input is Empty")
     
     var body: some View {
         switch selectedTrialItem {
@@ -40,16 +42,21 @@ struct DetailView: View {
                 print("\(isToggled ? "Toggle on" : "Toggle off")")
             }
         case .meterialTextField:
-            MaterialTextField(placeHolder: "First Name", text: $text)
-                .padding()
-            
+            VStack(alignment: .leading, spacing: 8) {
+                MaterialTextField(viewModel: materialTextViewModel)
+                Text("Text Added:")
+                Text(materialTextViewModel.text)
+                MaterialTextField(viewModel: errorMaterialTextViewModel)
+                Spacer()
+            }
+            .padding()
         }
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(selectedTrialItem: .meterialTextField, text: "")
+        DetailView(selectedTrialItem: .meterialTextField)
             .padding()
     }
 }

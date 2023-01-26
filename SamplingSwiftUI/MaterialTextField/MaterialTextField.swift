@@ -33,6 +33,12 @@ struct MaterialTextField: View {
             .animation(.default, value: viewModel.text)
             Divider()
                 .background(Color.gray)
+            if let errorMessage = viewModel.errorMessage, !errorMessage.isEmpty {
+                Text(errorMessage)
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.red)
+                    .padding(.horizontal, 4)
+            }
         }
     }
     
@@ -52,6 +58,12 @@ struct MeterialTextField_Previews: PreviewProvider {
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .padding()
                 .previewDisplayName("Empty")
+            MaterialTextField(viewModel: .init(optionalStateText: "Optional",
+                                               placeHolder: "Name",
+                                               errorMessage: "Input Empty"))
+                .previewLayout(PreviewLayout.sizeThatFits)
+                .padding()
+                .previewDisplayName("Error")
         }
     }
 }
