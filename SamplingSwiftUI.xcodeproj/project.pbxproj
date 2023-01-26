@@ -18,6 +18,7 @@
 		C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E29D274BC85500DABBE4 /* PLTripListView.swift */; };
 		C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094A1F2296F271200B1876B /* SwitchRowView.swift */; };
 		C0A66B0629800B7900C9A497 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A66B0529800B7900C9A497 /* MaterialTextField.swift */; };
+		C0A66BB22982C6A900C9A497 /* MaterialTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */; };
 		C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CD2948826300FC19C3 /* DetailView.swift */; };
 		C0E7B6D02948848900FC19C3 /* TrialItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CF2948848900FC19C3 /* TrialItem.swift */; };
 		C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */; };
@@ -56,6 +57,7 @@
 		C055E29D274BC85500DABBE4 /* PLTripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripListView.swift; sourceTree = "<group>"; };
 		C094A1F2296F271200B1876B /* SwitchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchRowView.swift; sourceTree = "<group>"; };
 		C0A66B0529800B7900C9A497 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldViewModel.swift; sourceTree = "<group>"; };
 		C0E7B6CD2948826300FC19C3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C0E7B6CF2948848900FC19C3 /* TrialItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialItem.swift; sourceTree = "<group>"; };
 		C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesUIKit.swift; sourceTree = "<group>"; };
@@ -115,7 +117,7 @@
 				C055E267274BA0C400DABBE4 /* AllSamplesView.swift */,
 				C0E7B6CD2948826300FC19C3 /* DetailView.swift */,
 				C094A1F2296F271200B1876B /* SwitchRowView.swift */,
-				C0A66B0529800B7900C9A497 /* MaterialTextField.swift */,
+				C0A66BB32982C6B000C9A497 /* MaterialTextField */,
 				C0E7B6D32949896C00FC19C3 /* Gesture */,
 				C0E7B6D2294884B500FC19C3 /* RefreshControlList */,
 				C055E269274BA0C800DABBE4 /* Assets.xcassets */,
@@ -147,6 +149,15 @@
 				C055E282274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = SamplingSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		C0A66BB32982C6B000C9A497 /* MaterialTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */,
+				C0A66B0529800B7900C9A497 /* MaterialTextField.swift */,
+			);
+			path = MaterialTextField;
 			sourceTree = "<group>";
 		};
 		C0E7B6D2294884B500FC19C3 /* RefreshControlList */ = {
@@ -303,6 +314,7 @@
 				C055E266274BA0C400DABBE4 /* SamplingSwiftUIApp.swift in Sources */,
 				C0E7B6D729498C4E00FC19C3 /* GestureRepresentableVC.swift in Sources */,
 				C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */,
+				C0A66BB22982C6A900C9A497 /* MaterialTextFieldViewModel.swift in Sources */,
 				C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */,
 				C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */,
 				C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */,

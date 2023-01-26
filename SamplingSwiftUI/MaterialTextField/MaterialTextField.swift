@@ -9,43 +9,46 @@ import SwiftUI
 
 struct MaterialTextField: View {
     
-    let placeHolder: String
-    @Binding var text: String
-    let optionalStateText: String? = "Optional"
+    @ObservedObject var viewModel: MaterialTextFieldViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             ZStack(alignment: .leading) {
-                if let optionalStateText, text.isEmpty {
+                if let optionalStateText = viewModel.optionalStateText,
+                   isTextEmpty {
                     Text(optionalStateText)
                         .foregroundColor(Color(.placeholderText))
                         .font(.system(size: 12, weight: .semibold))
                         .offset(y: -25)
                 }
-                Text(placeHolder)
-                    .foregroundColor(text.isEmpty
+                Text(viewModel.placeHolder)
+                    .foregroundColor(isTextEmpty
                                      ? Color(.placeholderText)
                                      : .blue)
-                    .offset(y: text.isEmpty ? 0 : -25)
-                    .scaleEffect(text.isEmpty ? 1 : 0.8, anchor: .leading)
-                TextField("", text: $text)
+                    .offset(y: isTextEmpty ? 0 : -25)
+                    .scaleEffect(isTextEmpty ? 1 : 0.8, anchor: .leading)
+                TextField("", text: $viewModel.text)
             }
             .padding(.top, 15)
-            .animation(.default, value: text)
+            .animation(.default, value: viewModel.text)
             Divider()
                 .background(Color.gray)
         }
+    }
+    
+    var isTextEmpty: Bool {
+        viewModel.text.isEmpty
     }
 }
 
 struct MeterialTextField_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MaterialTextField(placeHolder: "Name", text: .constant("Some Name"))
+            MaterialTextField(viewModel: .init(optionalStateText: nil, placeHolder: "Name"))
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .padding()
                 .previewDisplayName("Some")
-            MaterialTextField(placeHolder: "Name", text: .constant(""))
+            MaterialTextField(viewModel: .init(optionalStateText: "Optional", placeHolder: "Name"))
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .padding()
                 .previewDisplayName("Empty")
