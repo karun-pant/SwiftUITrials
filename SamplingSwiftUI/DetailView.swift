@@ -51,7 +51,7 @@ struct DetailView: View {
             }
             .padding()
         case .ScrollButtonTrial:
-            FabView()
+            FabView(viewIndexForThreshold: 25)
         }
     }
 }

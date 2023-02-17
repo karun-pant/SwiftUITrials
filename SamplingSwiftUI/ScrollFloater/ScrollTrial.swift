@@ -9,54 +9,49 @@ import SwiftUI
 import Combine
 
 struct FabView: View {
+    
+    let coordinateSpaceID = "scroll"
+    
     @State var showFab = false
-    let bgColor = [ColorUtil.random, ColorUtil.random]
+    
+    let viewIndexForThreshold: Int
+    
+    let bgColor = [Color.indigo, Color.mint]
+    
+    let scrollViewBGColor: Color = .white
+    @State private var viewIndexRect: CGRect = .zero
+    @State private var scrollViewSize: CGSize = .zero
 
     var body: some View {
-        ScrollView {
-            VStack (alignment: .leading) {
-                ForEach(0..<30) { i in
-                    HStack {
-                        Text("Item \(i)").padding()
-                        Spacer()
-                    }
-                    .frame(height: 100)
-                    .background(bgColor[ i % 2 ])
+        VStack (alignment: .leading) {
+            ForEach(0..<30) { i in
+                HStack {
+                    Text("Item \(i)")
+                        .padding()
+                    Spacer()
                 }
-            }.background(GeometryReader {
-                return Color.clear.preference(key: ViewOffsetKey.self,
-                                       value: -$0.frame(in: .named("scroll")).origin.y)
-            })
-            .onPreferenceChange(ViewOffsetKey.self) { offset in
-             withAnimation {
-              if offset > 200 {
-               showFab = true
-              } else  {
-               showFab = false
-              }
-             }
+                .frame(height: 100)
+                .background(bgColor[ i % 2 ])
+                .modifier(CoordinateSpaceFrameProvider(coordinateSpaceID: coordinateSpaceID,
+                                                       coordinateSpaceFrame: { frame in
+                    if viewIndexForThreshold == i {
+                        viewIndexRect = frame
+                    }
+                }))
             }
         }
-        .coordinateSpace(name: "scroll")
-        .overlay(
-            showFab ?
+        .modifier(FloatingButtonModifier(config: .init(bottomOffsetThreshold: viewIndexRect.maxY,
+                                                       scrollCoordinateSpaceID: coordinateSpaceID,
+                                                       scrollViewBGColor: .white),
+                                         floatingView: {
             FloatingBookButton(viewModel: .init(title:"Complete Booking",
-                                            subTitle: "for $2990.10"))
-                : nil
-            , alignment: Alignment.bottomTrailing)
-    }
-}
-
-struct ViewOffsetKey: PreferenceKey {
-    typealias Value = CGFloat
-    static var defaultValue = CGFloat.zero
-    static func reduce(value: inout Value, nextValue: () -> Value) {
-        value += nextValue()
+                                       subTitle: "for $2990.10"))
+        }))
     }
 }
 
 struct FabView_Previews: PreviewProvider {
     static var previews: some View {
-        FabView()
+        FabView(viewIndexForThreshold: 25)
     }
 }
