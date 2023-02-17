@@ -11,7 +11,16 @@ struct AllSamplesView: View {
     let allTrials = TrialItem.allCases
     
     var body: some View {
-        NavigationStack {
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                List(allTrials, id:\.id) { trialItem in
+                    NavigationLink(trialItem.rawValue) {
+                        DetailView(selectedTrialItem: trialItem)
+                    }
+                }
+            }
+        } else {
+            // Fallback on earlier versions
             List(allTrials, id:\.id) { trialItem in
                 NavigationLink(trialItem.rawValue) {
                     DetailView(selectedTrialItem: trialItem)

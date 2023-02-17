@@ -50,6 +50,8 @@ struct DetailView: View {
                 Spacer()
             }
             .padding()
+        case .ScrollButtonTrial:
+            FabView()
         }
     }
 }
