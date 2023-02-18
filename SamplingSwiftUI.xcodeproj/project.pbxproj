@@ -16,6 +16,7 @@
 		C055E283274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E282274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift */; };
 		C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */; };
 		C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E29D274BC85500DABBE4 /* PLTripListView.swift */; };
+		C079C2DA29A106320010C206 /* FloatingButtonScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079C2D929A106320010C206 /* FloatingButtonScrollView.swift */; };
 		C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094A1F2296F271200B1876B /* SwitchRowView.swift */; };
 		C0A66B0629800B7900C9A497 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A66B0529800B7900C9A497 /* MaterialTextField.swift */; };
 		C0A66BB22982C6A900C9A497 /* MaterialTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */; };
@@ -60,6 +61,7 @@
 		C055E282274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplingSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripRefreshableView.swift; sourceTree = "<group>"; };
 		C055E29D274BC85500DABBE4 /* PLTripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripListView.swift; sourceTree = "<group>"; };
+		C079C2D929A106320010C206 /* FloatingButtonScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonScrollView.swift; sourceTree = "<group>"; };
 		C094A1F2296F271200B1876B /* SwitchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchRowView.swift; sourceTree = "<group>"; };
 		C0A66B0529800B7900C9A497 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldViewModel.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				C0CF897E299D576A00B6B668 /* ScrollTrial.swift */,
 				C0B64047299E71B2005E86D8 /* FloatingBookButton.swift */,
 				C0B6406E299F7F2E005E86D8 /* FloatingScrollModifier.swift */,
+				C079C2D929A106320010C206 /* FloatingButtonScrollView.swift */,
 			);
 			path = ScrollFloater;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */,
 				C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */,
 				C0B6406F299F7F2E005E86D8 /* FloatingScrollModifier.swift in Sources */,
+				C079C2DA29A106320010C206 /* FloatingButtonScrollView.swift in Sources */,
 				C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */,
 				C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */,
 				C0CF897F299D576A00B6B668 /* ScrollTrial.swift in Sources */,

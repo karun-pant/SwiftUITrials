@@ -11,18 +11,14 @@ import Combine
 struct FabView: View {
     
     let coordinateSpaceID = "scroll"
-    
-    @State var showFab = false
-    
     let viewIndexForThreshold: Int
-    
     let bgColor = [Color.indigo, Color.mint]
-    
-    let scrollViewBGColor: Color = .white
     @State private var viewIndexRect: CGRect = .zero
-    @State private var scrollViewSize: CGSize = .zero
 
     var body: some View {
+        
+        // Way 1 Using Modifier
+        
         VStack (alignment: .leading) {
             ForEach(0..<30) { i in
                 HStack {
@@ -32,11 +28,11 @@ struct FabView: View {
                 }
                 .frame(height: 100)
                 .background(bgColor[ i % 2 ])
-                .modifier(CoordinateSpaceFrameProvider(coordinateSpaceID: coordinateSpaceID,
-                                                       coordinateSpaceFrame: { frame in
-                    if viewIndexForThreshold == i {
-                        viewIndexRect = frame
-                    }
+                .modifier(CoordinateSpaceFrameProvider(shouldIgnore: viewIndexForThreshold != i,
+                                                       coordinateSpace: .named(coordinateSpaceID),
+                                                       frame: { frame in
+                    print("Index: \(i) rect: \(frame)")
+                    viewIndexRect = frame
                 }))
             }
         }
@@ -47,6 +43,39 @@ struct FabView: View {
             FloatingBookButton(viewModel: .init(title:"Complete Booking",
                                        subTitle: "for $2990.10"))
         }))
+        
+        /**
+            
+         // Way 2 Using Wrapper
+         
+         FloatingButtonScrollView(
+             config: .init(bottomOffsetThreshold: viewIndexRect.maxY,
+                           scrollCoordinateSpaceID: coordinateSpaceID,
+                           scrollViewBGColor: .white),
+             content: {
+                 VStack (alignment: .leading) {
+                     ForEach(0..<30) { i in
+                         HStack {
+                             Text("Item \(i)")
+                                 .padding()
+                             Spacer()
+                         }
+                         .frame(height: 100)
+                         .background(bgColor[ i % 2 ])
+                         .modifier(CoordinateSpaceFrameProvider(shouldIgnore: viewIndexForThreshold != i,
+                                                                coordinateSpace: .named(coordinateSpaceID),
+                                                                frame: { frame in
+                             print("Index: \(i) rect: \(frame)")
+                             viewIndexRect = frame
+                         }))
+                     }
+                 }
+             },
+             floatingView: {
+                 FloatingBookButton(viewModel: .init(title:"Complete Booking",
+                                                     subTitle: "for $2990.10"))
+             })
+         */
     }
 }
 

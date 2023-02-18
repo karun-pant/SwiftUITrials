@@ -10,18 +10,24 @@ import SwiftUI
 /// This will give frame of a view based on it's parent coordinate space
 /// if it's named as passed in `coordinateSpaceID` else it will track global cordinate space.
 struct CoordinateSpaceFrameProvider: ViewModifier {
+    var shouldIgnore: Bool
+    ///  global -> framse as per global view
+    ///  local -> bounds
+    ///  named -> you own named space.
+    var coordinateSpace: CoordinateSpace
+    let frame: (_ frame: CGRect) -> Void
     
-    var coordinateSpaceID: String? = nil
-    let coordinateSpaceFrame: (_ frame: CGRect) -> Void
-    
-    func body(content: Content) -> some View {
-        content
-            .background(GeometryReader(content: { contentProxy in
-                Color.clear.onAppear {
-                    coordinateSpaceFrame(contentProxy.frame(in: coordinateSpaceID != nil
-                                                            ? .named(coordinateSpaceID)
-                                                            : .global))
-                }
-            }))
+    @ViewBuilder func body(content: Content) -> some View {
+        if shouldIgnore {
+            content
+        } else {
+            content
+                .background(GeometryReader(content: { contentProxy in
+                    Color.clear.onAppear {
+                        frame(contentProxy.frame(in: coordinateSpace))
+                    }
+                }))
+        }
+        
     }
 }
