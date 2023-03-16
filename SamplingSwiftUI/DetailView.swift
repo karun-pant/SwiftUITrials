@@ -2,7 +2,7 @@
 //  DetailView.swift
 //  SamplingSwiftUI
 //
-//  Created by Karun Pant on 13/12/22.
+//  Created by Karun Pant on 14/12/22.
 //
 
 import SwiftUI
