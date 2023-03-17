@@ -33,14 +33,26 @@ struct MeterialTextForm: View {
         }
         let allCases: [Field] = Field.allCases
         guard let safeFocusedField = focusedField,
-              safeFocusedField != allCases.last,
               let index = allCases.firstIndex(of: safeFocusedField) else {
             focusedField = nil
             return
         }
-        let nextIndex =  action == .next ? index + 1 : index - 1
-        let nextFocus = allCases[nextIndex]
-        focusedField = nextFocus
+        switch action {
+        case .next:
+            guard safeFocusedField != allCases.last else {
+                focusedField = nil
+                return
+            }
+            focusedField = allCases[index + 1]
+        case .previous:
+            guard safeFocusedField != allCases.first else {
+                focusedField = nil
+                return
+            }
+            focusedField = allCases[index - 1]
+        case .done:
+            assertionFailure("Code should not have reached here.")
+        }
     }
     
     var body: some View {
