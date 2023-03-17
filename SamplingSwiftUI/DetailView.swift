@@ -43,17 +43,26 @@ struct DetailView: View {
             }
         case .meterialTextField:
             VStack(alignment: .leading, spacing: 8) {
-                MaterialTextField(viewModel: materialTextViewModel)
-                Text("Text Added:")
-                Text(materialTextViewModel.text)
-                MaterialTextField(viewModel: errorMaterialTextViewModel)
+//                MaterialTextField(viewModel: materialTextViewModel)
+//                Text("Text Added:")
+//                Text(materialTextViewModel.text)
+//                MaterialTextField(viewModel: errorMaterialTextViewModel)
+                MeterialTextForm()
                 Spacer()
             }
             .padding()
         case .ScrollButtonTrial:
             FabView(viewIndexForThreshold: 25)
+        case .AttributedLabel:
+            AttributedLabel(attributedText: attributedString, boundingWidth: UIScreen.main.bounds.width)
         }
     }
+    
+    private let attributedString = {
+        let attributedString = NSMutableAttributedString(string: "Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here! Gooooogle something here!")
+        attributedString.addAttribute(.link, value: "https://www.google.com", range: NSRange(location: 0, length: 5))
+        return attributedString
+    }()
 }
 
 struct DetailView_Previews: PreviewProvider {

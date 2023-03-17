@@ -13,6 +13,7 @@ enum TrialItem: String, CaseIterable {
     case switchRowView = "Switch Row View"
     case meterialTextField = "Meterial Textbox"
     case ScrollButtonTrial = "Scroll Button Trial"
+    case AttributedLabel = "Attributed Label"
     var id: String {
         rawValue
     }
