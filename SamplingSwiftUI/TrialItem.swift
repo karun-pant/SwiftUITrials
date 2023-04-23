@@ -14,6 +14,7 @@ enum TrialItem: String, CaseIterable {
     case meterialTextField = "Meterial Textbox"
     case ScrollButtonTrial = "Scroll Button Trial"
     case AttributedLabel = "Attributed Label"
+    case InjectableText = "Injectable Text"
     var id: String {
         rawValue
     }

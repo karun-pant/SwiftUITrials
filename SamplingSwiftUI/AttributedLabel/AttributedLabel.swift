@@ -24,8 +24,6 @@ class LabelView: UIView {
         label.numberOfLines = 0
         label.lineBreakMode = .byTruncatingTail
         addSubview(label)
-        backgroundColor = .green
-        label.backgroundColor = .brown
     }
     
     func setText(_ attributedText: NSAttributedString) {

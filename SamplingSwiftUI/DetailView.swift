@@ -54,7 +54,36 @@ struct DetailView: View {
         case .ScrollButtonTrial:
             FabView(viewIndexForThreshold: 25)
         case .AttributedLabel:
-            AttributedLabel(attributedText: attributedString, boundingWidth: UIScreen.main.bounds.width)
+            VStack {
+                AttributedLabel(
+                    attributedText:
+                        MDParser(
+                            text: "[discount see how](www.google.com) {{home}} normal text normal text **normal bold** **{{listing}}** ===",
+                            variableToValue: ["home": "Home Screen",
+                                              "listing": "Air Listing"])
+                        .attributedString(normalFont: .systemFont(ofSize: 14, weight: .medium),
+                                          boldFont: .systemFont(ofSize: 14, weight: .bold),
+                                          foregroundColor: .black),
+                    boundingWidth: UIScreen.main.bounds.width)
+                .environment(\.openURL, OpenURLAction { url in
+                    print("---> link actioned: \(url.absoluteURL)")
+                    return .discarded
+                })
+                .padding(10)
+            }
+        case .InjectableText:
+            let viewModel = InjectableTextViewModel(
+                targetText: "[{{rcDiscount}}](doSomething) {{home}} normal text normal text **normal bold** **{{listing}}** | [Air Discounts](www.priceline.com)",
+                injectableKeyToValue: ["home": "Home Screen",
+                                       "rcDiscount": "Amazing RC discount Tap to see how",
+                                       "listing": "Air Listings"],
+                onTapAction: { actionName in
+                    print("Action Tapped: \(actionName)")
+                },
+                onTapURL: { url in
+                    print("URL Tapped: \(url.absoluteString)")
+                })
+            InjectableTextView(viewModel: viewModel)
         }
     }
     

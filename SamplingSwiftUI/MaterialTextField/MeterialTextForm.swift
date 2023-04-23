@@ -71,34 +71,43 @@ struct MeterialTextForm: View {
         }
         .toolbar {
             ToolbarItemGroup(placement: .keyboard) {
-                Button {
-                    onAction(.previous)
-                } label: {
-                    HStack {
-                        Text("<")
-                            .font(.system(size: 14, weight: .bold))
-                            .padding(8)
+                HStack {
+                    Button {
+                        onAction(.previous)
+                    } label: {
+                        HStack {
+                            Image(systemName: "chevron.left")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 16, height: 16, alignment: .center)
+                                .foregroundColor(.blue)
+                                .fixedSize()
+                        }
+                    }
+                    Button {
+                        onAction(.next)
+                    } label: {
+                        HStack {
+                            Image(systemName: "chevron.right")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 16, height: 16, alignment: .center)
+                                .foregroundColor(.blue)
+                                .fixedSize()
+                        }
+                    }
+                    Spacer()
+                    Button {
+                        onAction(.done)
+                    } label: {
+                        HStack {
+                            Text("Done")
+                                .font(.system(size: 16, weight: .medium))
+                                .padding(8)
+                        }
                     }
                 }
-                Button {
-                    onAction(.next)
-                } label: {
-                    HStack {
-                        Text(">")
-                            .font(.system(size: 14, weight: .bold))
-                            .padding(8)
-                    }
-                }
-                Spacer()
-                Button {
-                    onAction(.done)
-                } label: {
-                    HStack {
-                        Text("Done")
-                            .font(.system(size: 14, weight: .bold))
-                            .padding(8)
-                    }
-                }
+                .frame(height: 44)
             }
         }
     }

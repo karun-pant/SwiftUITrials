@@ -19,6 +19,11 @@
 		C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */; };
 		C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E29D274BC85500DABBE4 /* PLTripListView.swift */; };
 		C079C2DA29A106320010C206 /* FloatingButtonScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079C2D929A106320010C206 /* FloatingButtonScrollView.swift */; };
+		C0848CCA29F263DD00B5FBFF /* MDToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0848CC929F263DD00B5FBFF /* MDToken.swift */; };
+		C0848D0129F55F4900B5FBFF /* InjectableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0848D0029F55F4900B5FBFF /* InjectableTextView.swift */; };
+		C0848D0429F55F6800B5FBFF /* InjectableTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0848D0329F55F6800B5FBFF /* InjectableTextViewModel.swift */; };
+		C0890BF129F1477B00C006F9 /* MDParseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0890BF029F1477B00C006F9 /* MDParseable.swift */; };
+		C0890C1529F15DA100C006F9 /* MDParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0890C1429F15DA100C006F9 /* MDParsingTests.swift */; };
 		C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094A1F2296F271200B1876B /* SwitchRowView.swift */; };
 		C0A66B0629800B7900C9A497 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A66B0529800B7900C9A497 /* MaterialTextField.swift */; };
 		C0A66BB22982C6A900C9A497 /* MaterialTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */; };
@@ -66,6 +71,11 @@
 		C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripRefreshableView.swift; sourceTree = "<group>"; };
 		C055E29D274BC85500DABBE4 /* PLTripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripListView.swift; sourceTree = "<group>"; };
 		C079C2D929A106320010C206 /* FloatingButtonScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonScrollView.swift; sourceTree = "<group>"; };
+		C0848CC929F263DD00B5FBFF /* MDToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDToken.swift; sourceTree = "<group>"; };
+		C0848D0029F55F4900B5FBFF /* InjectableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableTextView.swift; sourceTree = "<group>"; };
+		C0848D0329F55F6800B5FBFF /* InjectableTextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableTextViewModel.swift; sourceTree = "<group>"; };
+		C0890BF029F1477B00C006F9 /* MDParseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDParseable.swift; sourceTree = "<group>"; };
+		C0890C1429F15DA100C006F9 /* MDParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDParsingTests.swift; sourceTree = "<group>"; };
 		C094A1F2296F271200B1876B /* SwitchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchRowView.swift; sourceTree = "<group>"; };
 		C0A66B0529800B7900C9A497 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldViewModel.swift; sourceTree = "<group>"; };
@@ -109,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				C01A2AE129C38B690091D5E8 /* AttributedLabel.swift */,
+				C0890BF029F1477B00C006F9 /* MDParseable.swift */,
+				C0848CC929F263DD00B5FBFF /* MDToken.swift */,
 			);
 			path = AttributedLabel;
 			sourceTree = "<group>";
@@ -141,6 +153,7 @@
 				C055E267274BA0C400DABBE4 /* AllSamplesView.swift */,
 				C0E7B6CD2948826300FC19C3 /* DetailView.swift */,
 				C094A1F2296F271200B1876B /* SwitchRowView.swift */,
+				C0848D0229F55F5500B5FBFF /* InjectbleTextView */,
 				C01A2AE029C38B4F0091D5E8 /* AttributedLabel */,
 				C0B64049299E71B9005E86D8 /* ScrollFloater */,
 				C0A66BB32982C6B000C9A497 /* MaterialTextField */,
@@ -166,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				C055E276274BA0C800DABBE4 /* SamplingSwiftUITests.swift */,
+				C0890C1429F15DA100C006F9 /* MDParsingTests.swift */,
 			);
 			path = SamplingSwiftUITests;
 			sourceTree = "<group>";
@@ -177,6 +191,15 @@
 				C055E282274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = SamplingSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		C0848D0229F55F5500B5FBFF /* InjectbleTextView */ = {
+			isa = PBXGroup;
+			children = (
+				C0848D0029F55F4900B5FBFF /* InjectableTextView.swift */,
+				C0848D0329F55F6800B5FBFF /* InjectableTextViewModel.swift */,
+			);
+			path = InjectbleTextView;
 			sourceTree = "<group>";
 		};
 		C0A66BB32982C6B000C9A497 /* MaterialTextField */ = {
@@ -354,12 +377,16 @@
 				C0B6409F299FB609005E86D8 /* CoordinateSpaceFrameProvider.swift in Sources */,
 				C0B64048299E71B2005E86D8 /* FloatingBookButton.swift in Sources */,
 				C055E266274BA0C400DABBE4 /* SamplingSwiftUIApp.swift in Sources */,
+				C0848D0429F55F6800B5FBFF /* InjectableTextViewModel.swift in Sources */,
 				C0B6406D299F5B0F005E86D8 /* ColorUtil.swift in Sources */,
 				C0E7B6D729498C4E00FC19C3 /* GestureRepresentableVC.swift in Sources */,
+				C0890BF129F1477B00C006F9 /* MDParseable.swift in Sources */,
 				C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */,
 				C01A2B0829C477600091D5E8 /* MeterialTextForm.swift in Sources */,
 				C0A66BB22982C6A900C9A497 /* MaterialTextFieldViewModel.swift in Sources */,
+				C0848CCA29F263DD00B5FBFF /* MDToken.swift in Sources */,
 				C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */,
+				C0848D0129F55F4900B5FBFF /* InjectableTextView.swift in Sources */,
 				C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */,
 				C0B6406F299F7F2E005E86D8 /* FloatingScrollModifier.swift in Sources */,
 				C079C2DA29A106320010C206 /* FloatingButtonScrollView.swift in Sources */,
@@ -375,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C055E277274BA0C800DABBE4 /* SamplingSwiftUITests.swift in Sources */,
+				C0890C1529F15DA100C006F9 /* MDParsingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
