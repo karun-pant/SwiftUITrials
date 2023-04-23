@@ -73,10 +73,11 @@ struct DetailView: View {
             }
         case .InjectableText:
             let viewModel = InjectableTextViewModel(
-                targetText: "[{{rcDiscount}}](doSomething) {{home}} normal text normal text **normal bold** **{{listing}}** | [Air Discounts](www.priceline.com)",
+                targetText: "**[{{rcDiscount}}](doSomething)** {{home}} normal text normal text **normal bold** **{{listing}}** | [Air Discounts](www.priceline.com)",
                 injectableKeyToValue: ["home": "Home Screen",
                                        "rcDiscount": "Amazing RC discount Tap to see how",
                                        "listing": "Air Listings"],
+                style: MDTextViewStyle(),
                 onTapAction: { actionName in
                     print("Action Tapped: \(actionName)")
                 },

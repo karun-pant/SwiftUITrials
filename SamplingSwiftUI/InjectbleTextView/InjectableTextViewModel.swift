@@ -13,6 +13,7 @@ struct InjectableTextViewModel {
     let text: AttributedString
     init(targetText: String,
          injectableKeyToValue: [String : String],
+         style: MDTextViewStyle,
          onTapAction: @escaping (_: String) -> Void,
          onTapURL: @escaping (_: URL) -> Void) {
         self.onTapAction = onTapAction
@@ -22,8 +23,8 @@ struct InjectableTextViewModel {
             injectableKeyToValue.forEach {
                 text = text.replacingOccurrences(of: "{{\($0.key)}}", with: $0.value)
             }
-            let attributedText = (try? AttributedString(markdown: text)) ?? AttributedString(stringLiteral: "")
-            return attributedText
+            return (try? MDStyledAttributedString(text: text,
+                                                  style: style).attributedText) ?? AttributedString(stringLiteral: "")
         }()
     }
 }

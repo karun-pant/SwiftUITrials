@@ -13,6 +13,7 @@ struct InjectableTextView: View {
     
     var body: some View {
         Text(viewModel.text)
+            .tint(Color.red)
             .environment(\.openURL, OpenURLAction { url in
                 let linkableURL: URL? = {
                     let absoluteString = url.absoluteString
@@ -38,10 +39,11 @@ struct InjectableTextView: View {
 struct InjectableTextView_Previews: PreviewProvider {
     static var previews: some View {
         InjectableTextView(
-            viewModel: .init(targetText: "[{{rcDiscount}}](doSomething) {{home}} normal text normal text **normal bold** **{{listing}}** | [Air Discounts](www.priceline.com)",
+            viewModel: .init(targetText: "**[{{rcDiscount}}](doSomething)** {{home}} normal text normal text **normal bold** **{{listing}}** | [Air Discounts](www.priceline.com)",
                              injectableKeyToValue: ["home": "Home Screen",
                                                     "rcDiscount": "Amazing RC discount Tap to see how",
                                                     "listing": "Air Listings"],
+                             style: MDTextViewStyle(),
                              onTapAction: { actionName in
                                  print("Action Tapped: \(actionName)")
                              },
