@@ -15,6 +15,8 @@ enum TrialItem: String, CaseIterable {
     case ScrollButtonTrial = "Scroll Button Trial"
     case AttributedLabel = "Attributed Label"
     case InjectableText = "Injectable Text"
+    case HTMLText = "HTML Text"
+    case ArrayState = "Handle State In List"
     var id: String {
         rawValue
     }

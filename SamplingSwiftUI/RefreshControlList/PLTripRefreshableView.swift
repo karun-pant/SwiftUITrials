@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct PLTripRefreshableView<ROOTVIEW>: UIViewRepresentable where ROOTVIEW: View {
+struct PLTripRefreshableView<REFRESHABLEROOTVIEW>: UIViewRepresentable where REFRESHABLEROOTVIEW: View {
     
     var size: CGSize
     @Binding var attributedTitle: NSAttributedString?
@@ -16,9 +16,9 @@ struct PLTripRefreshableView<ROOTVIEW>: UIViewRepresentable where ROOTVIEW: View
     var onOpenTray: (() -> ())? = nil
     var onCloseTray: (() -> ())? = nil
     @Binding var isRefreshComplete: Bool
-    let content: () -> ROOTVIEW
+    let content: () -> REFRESHABLEROOTVIEW
     
-    func makeCoordinator() -> Coordinator<ROOTVIEW> {
+    func makeCoordinator() -> Coordinator<REFRESHABLEROOTVIEW> {
         let coordinator = Coordinator(self, rootView: content)
         coordinator.onRefreshControlTriggered = onRefreshControlTriggered
         coordinator.onOpenTray = onOpenTray
@@ -50,16 +50,16 @@ struct PLTripRefreshableView<ROOTVIEW>: UIViewRepresentable where ROOTVIEW: View
         }
     }
     
-    class Coordinator<ROOTVIEW>: NSObject, UIScrollViewDelegate where ROOTVIEW: View {
-        var refreshableView: PLTripRefreshableView<ROOTVIEW>
+    class Coordinator<REFRESHABLEROOTVIEW>: NSObject, UIScrollViewDelegate where REFRESHABLEROOTVIEW: View {
+        var refreshableView: PLTripRefreshableView<REFRESHABLEROOTVIEW>
         var onRefreshControlTriggered: (() -> Void)? = nil
         var onOpenTray: (() -> ())? = nil
         var onCloseTray: (() -> ())? = nil
-        var rootView: () -> ROOTVIEW
+        var rootView: () -> REFRESHABLEROOTVIEW
         private var isShowingRefreshControl: Bool = false
 
-        init(_ control: PLTripRefreshableView<ROOTVIEW>,
-             rootView: @escaping () -> ROOTVIEW) {
+        init(_ control: PLTripRefreshableView<REFRESHABLEROOTVIEW>,
+             rootView: @escaping () -> REFRESHABLEROOTVIEW) {
             self.refreshableView = control
             self.rootView = rootView
         }

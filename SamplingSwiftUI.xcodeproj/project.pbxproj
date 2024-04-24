@@ -18,7 +18,13 @@
 		C055E283274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E282274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift */; };
 		C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */; };
 		C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E29D274BC85500DABBE4 /* PLTripListView.swift */; };
+		C06C22A729F900A5009E88D1 /* PLCMeterialVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C22A629F900A5009E88D1 /* PLCMeterialVM.swift */; };
+		C06C22A929F90149009E88D1 /* AssetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C22A829F90149009E88D1 /* AssetColor.swift */; };
+		C06C22AB29F90214009E88D1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06C22AA29F90214009E88D1 /* Colors.xcassets */; };
+		C06C22AD29F902BC009E88D1 /* AssetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C22AC29F902BC009E88D1 /* AssetImage.swift */; };
+		C076F6EF2B7151EB00AA3CB4 /* ArrayStateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076F6EE2B7151EB00AA3CB4 /* ArrayStateHandler.swift */; };
 		C079C2DA29A106320010C206 /* FloatingButtonScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079C2D929A106320010C206 /* FloatingButtonScrollView.swift */; };
+		C07CF5AE2A1CC95D00FDF9CF /* HorizontalListWithHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07CF5AD2A1CC95D00FDF9CF /* HorizontalListWithHeaderViewModel.swift */; };
 		C0848CCA29F263DD00B5FBFF /* MDToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0848CC929F263DD00B5FBFF /* MDToken.swift */; };
 		C0848D0129F55F4900B5FBFF /* InjectableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0848D0029F55F4900B5FBFF /* InjectableTextView.swift */; };
 		C0848D0429F55F6800B5FBFF /* InjectableTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0848D0329F55F6800B5FBFF /* InjectableTextViewModel.swift */; };
@@ -71,7 +77,13 @@
 		C055E282274BA0C800DABBE4 /* SamplingSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplingSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C055E28F274BA0FD00DABBE4 /* PLTripRefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripRefreshableView.swift; sourceTree = "<group>"; };
 		C055E29D274BC85500DABBE4 /* PLTripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLTripListView.swift; sourceTree = "<group>"; };
+		C06C22A629F900A5009E88D1 /* PLCMeterialVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLCMeterialVM.swift; sourceTree = "<group>"; };
+		C06C22A829F90149009E88D1 /* AssetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetColor.swift; sourceTree = "<group>"; };
+		C06C22AA29F90214009E88D1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C06C22AC29F902BC009E88D1 /* AssetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetImage.swift; sourceTree = "<group>"; };
+		C076F6EE2B7151EB00AA3CB4 /* ArrayStateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayStateHandler.swift; sourceTree = "<group>"; };
 		C079C2D929A106320010C206 /* FloatingButtonScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonScrollView.swift; sourceTree = "<group>"; };
+		C07CF5AD2A1CC95D00FDF9CF /* HorizontalListWithHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListWithHeaderViewModel.swift; sourceTree = "<group>"; };
 		C0848CC929F263DD00B5FBFF /* MDToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDToken.swift; sourceTree = "<group>"; };
 		C0848D0029F55F4900B5FBFF /* InjectableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableTextView.swift; sourceTree = "<group>"; };
 		C0848D0329F55F6800B5FBFF /* InjectableTextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableTextViewModel.swift; sourceTree = "<group>"; };
@@ -155,6 +167,8 @@
 				C055E267274BA0C400DABBE4 /* AllSamplesView.swift */,
 				C0E7B6CD2948826300FC19C3 /* DetailView.swift */,
 				C094A1F2296F271200B1876B /* SwitchRowView.swift */,
+				C07CF5AD2A1CC95D00FDF9CF /* HorizontalListWithHeaderViewModel.swift */,
+				C076F6F02B71662100AA3CB4 /* Array State Handler */,
 				C0848D0229F55F5500B5FBFF /* InjectbleTextView */,
 				C01A2AE029C38B4F0091D5E8 /* AttributedLabel */,
 				C0B64049299E71B9005E86D8 /* ScrollFloater */,
@@ -162,8 +176,11 @@
 				C0E7B6D32949896C00FC19C3 /* Gesture */,
 				C0E7B6D2294884B500FC19C3 /* RefreshControlList */,
 				C055E269274BA0C800DABBE4 /* Assets.xcassets */,
+				C06C22AA29F90214009E88D1 /* Colors.xcassets */,
 				C055E26B274BA0C800DABBE4 /* Preview Content */,
 				C0B6406C299F5B0F005E86D8 /* ColorUtil.swift */,
+				C06C22A829F90149009E88D1 /* AssetColor.swift */,
+				C06C22AC29F902BC009E88D1 /* AssetImage.swift */,
 				C0B6409E299FB609005E86D8 /* CoordinateSpaceFrameProvider.swift */,
 			);
 			path = SamplingSwiftUI;
@@ -195,6 +212,14 @@
 			path = SamplingSwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		C076F6F02B71662100AA3CB4 /* Array State Handler */ = {
+			isa = PBXGroup;
+			children = (
+				C076F6EE2B7151EB00AA3CB4 /* ArrayStateHandler.swift */,
+			);
+			path = "Array State Handler";
+			sourceTree = "<group>";
+		};
 		C0848D0229F55F5500B5FBFF /* InjectbleTextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +236,7 @@
 				C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */,
 				C0A66B0529800B7900C9A497 /* MaterialTextField.swift */,
 				C01A2B0729C477600091D5E8 /* MeterialTextForm.swift */,
+				C06C22A629F900A5009E88D1 /* PLCMeterialVM.swift */,
 			);
 			path = MaterialTextField;
 			sourceTree = "<group>";
@@ -348,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06C22AB29F90214009E88D1 /* Colors.xcassets in Resources */,
 				C055E26D274BA0C800DABBE4 /* Preview Assets.xcassets in Resources */,
 				C055E26A274BA0C800DABBE4 /* Assets.xcassets in Resources */,
 			);
@@ -375,7 +402,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A66B0629800B7900C9A497 /* MaterialTextField.swift in Sources */,
+				C06C22A729F900A5009E88D1 /* PLCMeterialVM.swift in Sources */,
+				C06C22A929F90149009E88D1 /* AssetColor.swift in Sources */,
 				C055E268274BA0C400DABBE4 /* AllSamplesView.swift in Sources */,
+				C07CF5AE2A1CC95D00FDF9CF /* HorizontalListWithHeaderViewModel.swift in Sources */,
 				C0E7B6D02948848900FC19C3 /* TrialItem.swift in Sources */,
 				C0B6409F299FB609005E86D8 /* CoordinateSpaceFrameProvider.swift in Sources */,
 				C0B64048299E71B2005E86D8 /* FloatingBookButton.swift in Sources */,
@@ -385,6 +415,7 @@
 				C0E7B6D729498C4E00FC19C3 /* GestureRepresentableVC.swift in Sources */,
 				C0890BF129F1477B00C006F9 /* MDParseable.swift in Sources */,
 				C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */,
+				C06C22AD29F902BC009E88D1 /* AssetImage.swift in Sources */,
 				C01A2B0829C477600091D5E8 /* MeterialTextForm.swift in Sources */,
 				C0A66BB22982C6A900C9A497 /* MaterialTextFieldViewModel.swift in Sources */,
 				C0848CCA29F263DD00B5FBFF /* MDToken.swift in Sources */,
@@ -398,6 +429,7 @@
 				C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */,
 				C0848D2D29F5764E00B5FBFF /* MDStyledAttributedString.swift in Sources */,
 				C0CF897F299D576A00B6B668 /* ScrollTrial.swift in Sources */,
+				C076F6EF2B7151EB00AA3CB4 /* ArrayStateHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
