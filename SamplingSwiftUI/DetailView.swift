@@ -19,6 +19,11 @@ struct DetailView: View {
     @FocusState var focus: String?
     
     var body: some View {
+        SamplesList
+    }
+    
+    @ViewBuilder
+    private var SamplesList: some View {
         switch selectedTrialItem {
         case .tripListView:
             PLTripMyTripListView(viewModel: tripListViewModel,
@@ -160,6 +165,35 @@ struct DetailView: View {
                 Item(name: "Item 2", type: .emojiOnly),
                 Item(name: "Item 3", type: .emojiOnly)
             ]))
+        case .slidableUIVIew:
+            SlidableView
+        }
+    }
+    
+    private var SlidableView: some View {
+        VStack(spacing: 16) {
+            SliderCellView(
+                parentWidth: 320,
+                viewModel: .init(
+                    originCode: "NYC",
+                    destinationCode: "LAS",
+                    originDate: "May 29",
+                    destinationDate: "Jun 10",
+                    badgeViewModel: .init(title: "ROUND-TRIP",
+                                          image: nil,
+                                          style: .roundTrip),
+                    swipeActionViewModel: .init(title: "Stop Watching", isDestructive: true)))
+            SliderCellView(
+                parentWidth: 320,
+                viewModel: .init(
+                    originCode: "NYC",
+                    destinationCode: "LAS",
+                    originDate: "May 29",
+                    destinationDate: "Jun 10",
+                    badgeViewModel: .init(title: "ONE-WAY",
+                                          image: nil,
+                                          style: .roundTrip),
+                    swipeActionViewModel: .init(title: "Watch Again", isDestructive: false)))
         }
     }
     
@@ -218,7 +252,7 @@ struct UIKLabel: UIViewRepresentable {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(selectedTrialItem: .HTMLText)
+        DetailView(selectedTrialItem: .slidableUIVIew)
             .padding()
     }
 }

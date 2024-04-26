@@ -17,6 +17,7 @@ enum TrialItem: String, CaseIterable {
     case InjectableText = "Injectable Text"
     case HTMLText = "HTML Text"
     case ArrayState = "Handle State In List"
+    case slidableUIVIew = "Slidable row view UIKit"
     var id: String {
         rawValue
     }

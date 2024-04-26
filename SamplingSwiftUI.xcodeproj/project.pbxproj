@@ -31,6 +31,13 @@
 		C0848D2D29F5764E00B5FBFF /* MDStyledAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0848D2C29F5764E00B5FBFF /* MDStyledAttributedString.swift */; };
 		C0890BF129F1477B00C006F9 /* MDParseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0890BF029F1477B00C006F9 /* MDParseable.swift */; };
 		C0890C1529F15DA100C006F9 /* MDParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0890C1429F15DA100C006F9 /* MDParsingTests.swift */; };
+		C09448462BD8EFF100620AEE /* SliderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09448452BD8EFF100620AEE /* SliderCellView.swift */; };
+		C09448482BD8EFFC00620AEE /* SliderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09448472BD8EFFC00620AEE /* SliderCellViewModel.swift */; };
+		C09448722BD8FC3800620AEE /* BadgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09448712BD8FC3800620AEE /* BadgeViewModel.swift */; };
+		C09448742BD8FCF200620AEE /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09448732BD8FCF200620AEE /* BadgeView.swift */; };
+		C094489F2BDA3EC700620AEE /* ItineraryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094489E2BDA3EC700620AEE /* ItineraryInfoView.swift */; };
+		C09448A12BDA455200620AEE /* ItineraryInfoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09448A02BDA455200620AEE /* ItineraryInfoCollectionView.swift */; };
+		C09448A32BDA48B700620AEE /* ItineraryInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09448A22BDA48B700620AEE /* ItineraryInfoViewModel.swift */; };
 		C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094A1F2296F271200B1876B /* SwitchRowView.swift */; };
 		C0A66B0629800B7900C9A497 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A66B0529800B7900C9A497 /* MaterialTextField.swift */; };
 		C0A66BB22982C6A900C9A497 /* MaterialTextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */; };
@@ -42,7 +49,7 @@
 		C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CD2948826300FC19C3 /* DetailView.swift */; };
 		C0E7B6D02948848900FC19C3 /* TrialItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6CF2948848900FC19C3 /* TrialItem.swift */; };
 		C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */; };
-		C0E7B6D729498C4E00FC19C3 /* GestureRepresentableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6D629498C4E00FC19C3 /* GestureRepresentableVC.swift */; };
+		C0E7B6D729498C4E00FC19C3 /* RepresentableVCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7B6D629498C4E00FC19C3 /* RepresentableVCs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +97,13 @@
 		C0848D2C29F5764E00B5FBFF /* MDStyledAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDStyledAttributedString.swift; sourceTree = "<group>"; };
 		C0890BF029F1477B00C006F9 /* MDParseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDParseable.swift; sourceTree = "<group>"; };
 		C0890C1429F15DA100C006F9 /* MDParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDParsingTests.swift; sourceTree = "<group>"; };
+		C09448452BD8EFF100620AEE /* SliderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCellView.swift; sourceTree = "<group>"; };
+		C09448472BD8EFFC00620AEE /* SliderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCellViewModel.swift; sourceTree = "<group>"; };
+		C09448712BD8FC3800620AEE /* BadgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeViewModel.swift; sourceTree = "<group>"; };
+		C09448732BD8FCF200620AEE /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		C094489E2BDA3EC700620AEE /* ItineraryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryInfoView.swift; sourceTree = "<group>"; };
+		C09448A02BDA455200620AEE /* ItineraryInfoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryInfoCollectionView.swift; sourceTree = "<group>"; };
+		C09448A22BDA48B700620AEE /* ItineraryInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryInfoViewModel.swift; sourceTree = "<group>"; };
 		C094A1F2296F271200B1876B /* SwitchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchRowView.swift; sourceTree = "<group>"; };
 		C0A66B0529800B7900C9A497 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		C0A66BB12982C6A900C9A497 /* MaterialTextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldViewModel.swift; sourceTree = "<group>"; };
@@ -101,7 +115,7 @@
 		C0E7B6CD2948826300FC19C3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C0E7B6CF2948848900FC19C3 /* TrialItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialItem.swift; sourceTree = "<group>"; };
 		C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesUIKit.swift; sourceTree = "<group>"; };
-		C0E7B6D629498C4E00FC19C3 /* GestureRepresentableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRepresentableVC.swift; sourceTree = "<group>"; };
+		C0E7B6D629498C4E00FC19C3 /* RepresentableVCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableVCs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,12 +182,15 @@
 				C0E7B6CD2948826300FC19C3 /* DetailView.swift */,
 				C094A1F2296F271200B1876B /* SwitchRowView.swift */,
 				C07CF5AD2A1CC95D00FDF9CF /* HorizontalListWithHeaderViewModel.swift */,
+				C0E7B6D629498C4E00FC19C3 /* RepresentableVCs.swift */,
 				C076F6F02B71662100AA3CB4 /* Array State Handler */,
 				C0848D0229F55F5500B5FBFF /* InjectbleTextView */,
 				C01A2AE029C38B4F0091D5E8 /* AttributedLabel */,
 				C0B64049299E71B9005E86D8 /* ScrollFloater */,
 				C0A66BB32982C6B000C9A497 /* MaterialTextField */,
 				C0E7B6D32949896C00FC19C3 /* Gesture */,
+				C09448702BD8FC2800620AEE /* Badge */,
+				C09448442BD8EFB600620AEE /* SliderCell */,
 				C0E7B6D2294884B500FC19C3 /* RefreshControlList */,
 				C055E269274BA0C800DABBE4 /* Assets.xcassets */,
 				C06C22AA29F90214009E88D1 /* Colors.xcassets */,
@@ -230,6 +247,27 @@
 			path = InjectbleTextView;
 			sourceTree = "<group>";
 		};
+		C09448442BD8EFB600620AEE /* SliderCell */ = {
+			isa = PBXGroup;
+			children = (
+				C09448452BD8EFF100620AEE /* SliderCellView.swift */,
+				C09448472BD8EFFC00620AEE /* SliderCellViewModel.swift */,
+				C094489E2BDA3EC700620AEE /* ItineraryInfoView.swift */,
+				C09448A22BDA48B700620AEE /* ItineraryInfoViewModel.swift */,
+				C09448A02BDA455200620AEE /* ItineraryInfoCollectionView.swift */,
+			);
+			path = SliderCell;
+			sourceTree = "<group>";
+		};
+		C09448702BD8FC2800620AEE /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				C09448712BD8FC3800620AEE /* BadgeViewModel.swift */,
+				C09448732BD8FCF200620AEE /* BadgeView.swift */,
+			);
+			path = Badge;
+			sourceTree = "<group>";
+		};
 		C0A66BB32982C6B000C9A497 /* MaterialTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,7 +303,6 @@
 			isa = PBXGroup;
 			children = (
 				C0E7B6D42949898B00FC19C3 /* GesturesUIKit.swift */,
-				C0E7B6D629498C4E00FC19C3 /* GestureRepresentableVC.swift */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -401,8 +438,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09448742BD8FCF200620AEE /* BadgeView.swift in Sources */,
 				C0A66B0629800B7900C9A497 /* MaterialTextField.swift in Sources */,
+				C094489F2BDA3EC700620AEE /* ItineraryInfoView.swift in Sources */,
 				C06C22A729F900A5009E88D1 /* PLCMeterialVM.swift in Sources */,
+				C09448482BD8EFFC00620AEE /* SliderCellViewModel.swift in Sources */,
 				C06C22A929F90149009E88D1 /* AssetColor.swift in Sources */,
 				C055E268274BA0C400DABBE4 /* AllSamplesView.swift in Sources */,
 				C07CF5AE2A1CC95D00FDF9CF /* HorizontalListWithHeaderViewModel.swift in Sources */,
@@ -412,16 +452,20 @@
 				C055E266274BA0C400DABBE4 /* SamplingSwiftUIApp.swift in Sources */,
 				C0848D0429F55F6800B5FBFF /* InjectableTextViewModel.swift in Sources */,
 				C0B6406D299F5B0F005E86D8 /* ColorUtil.swift in Sources */,
-				C0E7B6D729498C4E00FC19C3 /* GestureRepresentableVC.swift in Sources */,
+				C0E7B6D729498C4E00FC19C3 /* RepresentableVCs.swift in Sources */,
 				C0890BF129F1477B00C006F9 /* MDParseable.swift in Sources */,
+				C09448722BD8FC3800620AEE /* BadgeViewModel.swift in Sources */,
 				C0E7B6D52949898B00FC19C3 /* GesturesUIKit.swift in Sources */,
+				C09448A32BDA48B700620AEE /* ItineraryInfoViewModel.swift in Sources */,
 				C06C22AD29F902BC009E88D1 /* AssetImage.swift in Sources */,
 				C01A2B0829C477600091D5E8 /* MeterialTextForm.swift in Sources */,
 				C0A66BB22982C6A900C9A497 /* MaterialTextFieldViewModel.swift in Sources */,
 				C0848CCA29F263DD00B5FBFF /* MDToken.swift in Sources */,
 				C0E7B6CE2948826300FC19C3 /* DetailView.swift in Sources */,
+				C09448462BD8EFF100620AEE /* SliderCellView.swift in Sources */,
 				C0848D0129F55F4900B5FBFF /* InjectableTextView.swift in Sources */,
 				C055E290274BA0FD00DABBE4 /* PLTripRefreshableView.swift in Sources */,
+				C09448A12BDA455200620AEE /* ItineraryInfoCollectionView.swift in Sources */,
 				C0B6406F299F7F2E005E86D8 /* FloatingScrollModifier.swift in Sources */,
 				C079C2DA29A106320010C206 /* FloatingButtonScrollView.swift in Sources */,
 				C01A2AE229C38B690091D5E8 /* AttributedLabel.swift in Sources */,

@@ -18,6 +18,7 @@ enum AssetImage: String {
     case checkmarkSystemImage = "checkmark"
     case lock = "envelope.fill"
     case canAir = "can_air"
+    case plane = "aeroplane"
 
     // MARK: -
     // to access images use PLCheckout.calender.image (swiftUI) or PLCheckout.calender.uiImage (UIImage)
