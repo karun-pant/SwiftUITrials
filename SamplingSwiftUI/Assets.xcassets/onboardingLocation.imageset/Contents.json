@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "img-onboarding-location-xxhdpi.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -18,8 +18,18 @@ struct DetailView: View {
     
     @FocusState var focus: String?
     
+    var onboardingHelper = OnboardingViewStateHelper()
+    
     var body: some View {
-        SamplesList
+        Text("$90")
+            .padding(4)
+            .overlay {
+                Divider()
+                    .frame(height: 1)
+                    .background(Color.red)
+                    .rotationEffect(.degrees(173.33))
+            }
+//        SamplesList
     }
     
     @ViewBuilder
@@ -167,6 +177,14 @@ struct DetailView: View {
             ]))
         case .slidableUIVIew:
             SlidableView
+        case .onboarding:
+            OnboardingView(
+                viewModel: .init(
+                    push: .pushPermissionViewModel(action: {  }),
+                    location: .locationPermissionViewModel(action: { }),
+                    signin: .signinViewModel(signinAction: {}, createAccountAction: {}, skipAction: {})
+                )
+            )
         }
     }
     
@@ -253,6 +271,5 @@ struct UIKLabel: UIViewRepresentable {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         DetailView(selectedTrialItem: .slidableUIVIew)
-            .padding()
     }
 }
