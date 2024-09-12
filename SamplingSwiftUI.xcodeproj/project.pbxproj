@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C01A2AE229C38B690091D5E8 /* AttributedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A2AE129C38B690091D5E8 /* AttributedLabel.swift */; };
 		C01A2B0829C477600091D5E8 /* MeterialTextForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A2B0729C477600091D5E8 /* MeterialTextForm.swift */; };
-		C01C85152C9317C100D71CD7 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C85142C9317C100D71CD7 /* Secrets.swift */; };
 		C055E266274BA0C400DABBE4 /* SamplingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E265274BA0C400DABBE4 /* SamplingSwiftUIApp.swift */; };
 		C055E268274BA0C400DABBE4 /* AllSamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055E267274BA0C400DABBE4 /* AllSamplesView.swift */; };
 		C055E26A274BA0C800DABBE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C055E269274BA0C800DABBE4 /* Assets.xcassets */; };
@@ -78,7 +77,6 @@
 /* Begin PBXFileReference section */
 		C01A2AE129C38B690091D5E8 /* AttributedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedLabel.swift; sourceTree = "<group>"; };
 		C01A2B0729C477600091D5E8 /* MeterialTextForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterialTextForm.swift; sourceTree = "<group>"; };
-		C01C85142C9317C100D71CD7 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = SOURCE_ROOT; };
 		C055E262274BA0C400DABBE4 /* SamplingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamplingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C055E265274BA0C400DABBE4 /* SamplingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplingSwiftUIApp.swift; sourceTree = "<group>"; };
 		C055E267274BA0C400DABBE4 /* AllSamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSamplesView.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 				C094A1F2296F271200B1876B /* SwitchRowView.swift */,
 				C07CF5AD2A1CC95D00FDF9CF /* HorizontalListWithHeaderViewModel.swift */,
 				C0E7B6D629498C4E00FC19C3 /* RepresentableVCs.swift */,
-				C01C85142C9317C100D71CD7 /* Secrets.swift */,
 				C06FE0ED2BFE26540030F984 /* Onboarding */,
 				C076F6F02B71662100AA3CB4 /* Array State Handler */,
 				C0848D0229F55F5500B5FBFF /* InjectbleTextView */,
@@ -501,7 +498,6 @@
 				C01A2AE229C38B690091D5E8 /* AttributedLabel.swift in Sources */,
 				C055E29E274BC85500DABBE4 /* PLTripListView.swift in Sources */,
 				C094A1F3296F271200B1876B /* SwitchRowView.swift in Sources */,
-				C01C85152C9317C100D71CD7 /* Secrets.swift in Sources */,
 				C0848D2D29F5764E00B5FBFF /* MDStyledAttributedString.swift in Sources */,
 				C092CE362C05FF6E0074A5D7 /* CDCView.swift in Sources */,
 				C0CF897F299D576A00B6B668 /* ScrollTrial.swift in Sources */,
